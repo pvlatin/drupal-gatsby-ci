@@ -18,16 +18,18 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'google-site-verification',
+              content: 'LyEi0LkqxR-CiriiJaPFCDJdCq_BV7Vc_Kow-dxoec0',
+            },
           ]}
-        >
-          <html lang="en" />
-        </Helmet>
+        />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -39,7 +41,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-      </>
+      </div>
     )}
   />
 )
