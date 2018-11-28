@@ -9,7 +9,7 @@ module.exports = {
       resolve: 'gatsby-source-drupal',
       options: {
         baseUrl: 'http://35.202.126.177/drupal/',
-        apiBase: 'jsonapi',
+        apiBase: 'api',
       },
     },
     'gatsby-plugin-react-helmet',
