@@ -4,14 +4,21 @@ import Img from 'gatsby-image'
 import Receta from './receta'
 
 
-const ListRecetas = ({ data }) => (
-  <div>
-    <h1>Recipes</h1>
-    <div className="g-recetas">
-      {data.allNodeRecipe.edges.map(({ node }) => <Receta key={node.id} node={node}/>)}  
-    </div>
-  </div>
-) 
+
+class ListRecetas extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Recipes</h1>
+        <div className="g-recetas">
+          {console.log(this.props.data.allNodeRecipe.edges, 'data props')}
+          {this.props.data.allNodeRecipe.edges.map( ({ node }) => <Receta key={node.id} node={node}/>)}  
+        </div>
+      </div>
+    ) 
+  }
+}
+
 
 
 export default ListRecetas

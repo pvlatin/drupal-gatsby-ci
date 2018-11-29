@@ -19,12 +19,19 @@ export const query = graphql`
         node {
           id
           title
-          path {
-            alias
+          relationships {
+            field_image {
+              uri {
+                url
+              }
+            }
           }
         }
       }
     }
-  }`   
+  }` 
+  
+  
+
 
 export default IndexPage
