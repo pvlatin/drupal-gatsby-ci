@@ -1,13 +1,20 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
 // Layout
 
 @import 'layout/grid';
+@import 'layout/layout';
 
 // Components
 
 @import 'components/header';
 @import 'components/receta';
+@import 'components/slick';
 
 // Utilities
 
 @import 'utils/variables';
 @import 'utils/helper';
+@import 'utils/vendor';

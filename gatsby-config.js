@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    siteUrl: 'http://35.202.112.195',
+    title: 'Mall Plaza 2.0',
+    siteUrl: 'http://localhost:8001/',
   },
   plugins: [
     // in gatsby-config.js
     {
       resolve: 'gatsby-source-drupal',
       options: {
-        baseUrl: 'http://35.202.126.177/drupal/',
-        apiBase: 'api',
+        baseUrl: 'http://localhost/',
+        apiBase: 'jsonapi',
       },
     },
     'gatsby-plugin-react-helmet',
@@ -54,5 +54,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        // Setting a color is optional.
+        color: 'tomato',
+        // Disable the loading spinner.
+        showSpinner: true,
+        trickle: false,
+        minimum: 0.1,
+      },
+    },
   ],
 }

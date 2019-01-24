@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.56",
-    "gatsby-image": "^2.0.21",
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.25",
     "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-manifest": "^2.0.10",
+    "gatsby-plugin-nprogress": "^2.0.7",
     "gatsby-plugin-offline": "^2.0.17",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-robots-txt": "^1.3.0",
@@ -17,10 +18,15 @@
     "gatsby-source-drupal": "^3.0.10",
     "gatsby-source-filesystem": "^2.0.9",
     "gatsby-transformer-sharp": "^2.1.8",
-    "node-sass": "^4.10.0",
+    "mdbreact": "git+https://nectia-ux:WpqAPWsPMpJ7NZ73WEXv@bitbucket.org/nectiateam/mdb-react-pro.git#4.8.4",
+    "font-awesome": "^4.7.0",
+    "bootstrap-css-only": "^4.1.3",
+    "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby"
@@ -31,10 +37,18 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "@babel/core": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2",
+    "react-test-renderer": "^16.6.3",
+    "styled-components": "^4.1.3"
   },
   "repository": {
     "type": "git",

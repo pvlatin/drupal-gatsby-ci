@@ -1,37 +1,24 @@
+
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Image from '../components/image'
-import ListRecetas from '../components/list-recetas'
+import Layout from '../components/Layout'
+// import Image from '../components/image'
+// import Tiendas from '../components/Tiendas'
+import Carousel from '../components/Carousel'
+import Services from '../components/Services'
+import SectionNuestrasTiendas from '../components/SectionNuestrasTiendas'
+import SectionQueEstaPasando from '../components/SectionQueEstaPasando'
+import SectionActividadesCarousel from '../components/SectionActividadesCarousel'
 
 import '../styles/main.scss'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <ListRecetas data={data}/>
+    <Carousel/>
+    <Services/>
+    <SectionNuestrasTiendas/>
+    <SectionQueEstaPasando/>
+    <SectionActividadesCarousel/>
   </Layout>
 )
-
-export const query = graphql`
-  query IndexRecetas { 
-    allNodeRecipe {
-      edges {
-        node {
-          id
-          title
-          relationships {
-            field_image {
-              uri {
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  }` 
-  
-  
-
 
 export default IndexPage

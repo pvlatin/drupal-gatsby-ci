@@ -1,0 +1,141 @@
+// import React from 'react'
+// import renderer from 'react-test-renderer'
+// import IndexPage from '.././pages/index'
+
+// describe('IndexPage', () => {
+//   it('renders correctly', () => {
+//     const location = {
+//       pathname: '/',
+//     }
+
+//     const data = {
+//       'allNodeRecipe': {
+//         'edges': [
+//           {
+//             'node': {
+//               'title': 'Deep mediterranean quiche',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://mediterranean-quiche-umami.jpg',
+//                     'url': '/drupal/sites/default/files/mediterranean-quiche-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Vegan chocolate brownies',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://chocolate-brownie-umami.jpg',
+//                     'url': '/drupal/sites/default/files/chocolate-brownie-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Super easy vegetarian pasta bake',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://veggie-pasta-bake-umami.jpg',
+//                     'url': '/drupal/sites/default/files/veggie-pasta-bake-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Victoria sponge cake',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://victoria-sponge-umami.jpg',
+//                     'url': '/drupal/sites/default/files/victoria-sponge-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Gluten free pizza',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://pizza-umami.jpg',
+//                     'url': '/drupal/sites/default/files/pizza-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Thai green curry',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://thai-green-curry-umami.jpg',
+//                     'url': '/drupal/sites/default/files/thai-green-curry-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Crema catalana',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://crema-catalana-umami.jpg',
+//                     'url': '/drupal/sites/default/files/crema-catalana-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'Fiery chili sauce',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://chili-sauce-umami.jpg',
+//                     'url': '/drupal/sites/default/files/chili-sauce-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           {
+//             'node': {
+//               'title': 'sopa verde',
+//               'relationships': {
+//                 'field_image': {
+//                   'uri': {
+//                     'value': 'public://watercress-soup-umami.jpg',
+//                     'url': '/drupal/sites/default/files/watercress-soup-umami.jpg'
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         ]
+//       }
+//     }
+
+    
+  
+
+//     const tree = renderer.create(<IndexPage location={location} data={data}/>).toJSON()
+//     expect(tree).toMatchSnapshot()
+//   })
+// })

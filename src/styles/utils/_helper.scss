@@ -9,3 +9,40 @@
 .h-width-100 {
   width: 100%;
 }
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.align-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 10px !important;
+}
+
+.rrss-box {
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #55565a;
+  height: 2.5rem;
+  position: relative;
+  i {
+    color: #f3f3f3;
+    position: absolute;
+    font-size: 1.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Modificador
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}

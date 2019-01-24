@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
 import Header from './header'
+import Nav from './Nav'
 import './layout.css'
+import Footer from './Footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,10 +31,12 @@ const Layout = ({ children }) => (
             },
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header className="no-padding" siteTitle={data.site.siteMetadata.title} />
+        <Nav/>
         <div>
           {children}
         </div>
+        <Footer/>
       </div>
     )}
   />
